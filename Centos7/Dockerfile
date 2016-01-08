@@ -9,5 +9,6 @@ cd Python-3.5.1 &&\
 ./configure &&\
 make && make install &&\
 ln -s /usr/local/bin/python3 /usr/bin/python3 &&\
-chmod a+x /usr/bin/python3
+chmod a+x /usr/bin/python3 &&\
+cd ../ && rm -rf Python-3.5.1.tar.xz && rm -rf Python-3.5.1
 RUN python3 --version
