@@ -6,7 +6,7 @@ RUN yum update -y
 # Install Development tools
 RUN yum check-update && yum groupinstall 'Development Tools' -y
 # Install Python3 dependencies
-RUN yum check-update && yum install -y wget openssl
+RUN yum check-update && yum install -y wget openssl openssl-devel
 # Get Python3 sources
 RUN wget https://www.python.org/ftp/python/3.5.1/Python-3.5.1.tar.xz && \
 tar -xf Python-3.5.1.tar.xz
