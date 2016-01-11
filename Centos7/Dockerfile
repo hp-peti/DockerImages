@@ -20,3 +20,4 @@ WORKDIR /
 RUN rm -rf Python-3.5.1.tar.xz && rm -rf Python-3.5.1
 # Test Python3 is there and available in $PATH
 RUN python3 --version
+RUN python3 -m pip install junit-xml
