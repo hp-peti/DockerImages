@@ -9,4 +9,4 @@ RUN yes | ./subversion_installer_1.9.sh
 RUN rm -rf subversion_installer_1.9.sh
 RUN yum remove -y wget
 RUN svn --version
-RUN yum install X11-dev
+RUN yum install libX11-devel
