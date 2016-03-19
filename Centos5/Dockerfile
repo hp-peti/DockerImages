@@ -1,5 +1,5 @@
 FROM centos:5
-MAINTAINER Ovidiu-Florin Bogdan "ovidiu.bogdan@movidius.com"
+MAINTAINER Hanos-Puskai Peter "peter.hanos@movidius.com"
 RUN yum update -y
 RUN yum groupinstall 'Development Tools' -y
 RUN yum install -y wget
