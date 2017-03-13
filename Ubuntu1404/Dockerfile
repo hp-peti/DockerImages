@@ -1,6 +1,4 @@
-FROM ubuntu:14.04
-# this is an LTS release of Ubuntu
-MAINTAINER Ovidiu-Florin Bogdan "ovidiu.bogdan@movidius.com"
-RUN apt-get update
-RUN apt-get dist-upgrade -yy
-RUN apt-get install -yy build-essential
+# Docker image to build gcc-6.3.0
+FROM movidius/movibuild:ubuntu1404
+MAINTAINER Hanos-Puskai Peter "peter.hanos@movidius.com"
+RUN apt-get install -yy texinfo
